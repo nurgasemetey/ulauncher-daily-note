@@ -1,0 +1,41 @@
+{
+    "required_api_version": "^2.0.0",
+    "name": "Daily Note",
+    "description": "Create daily notes",
+    "developer_name": "Nurgazy Nazhimidinov",
+    "icon": "images/icon.png",
+    "options": {
+      "query_debounce": 0.05
+    },
+    "preferences": [
+      {
+        "id": "note_kw",
+        "type": "keyword",
+        "name": "dailynote",
+        "default_value": "dn"
+      },
+      {
+        "id": "directory",
+        "type": "input",
+        "name": "Directory",
+        "description": "Directory path where notes are stored. By default, notes are stored in 'notes' folder in your home directory. Example: /home/nurgasemetey/Desktop/notes"
+      },
+
+      {
+        "id": "filename_format",
+        "type": "input",
+        "name": "File name format",
+        "description": "Filename format of note. Example: %Y-%m-%d(means that YEAR-MONTH-DAY - 2022-02-20). Note: because under the hood it uses Python, it is different that you can be used to be. Please look at https://strftime.org/ and configure according to your needs. In the meantime, I will try to adapt ISO format to this extension.",
+        "default_value":"%Y-%m-%d"
+      },
+
+      {
+        "id": "file_extension",
+        "type": "input",
+        "name": "File extension",
+        "description": "File extension. File will be saved with this extension. Example: .txt, .md",
+        "default_value":".md"
+      }
+      
+    ]
+  }
