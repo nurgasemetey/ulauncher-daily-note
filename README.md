@@ -2,6 +2,9 @@
 
 With this extension, you can quickly take notes that are saved in journal format like `2022-02-20.md`
 
+
+Link on extension list: https://ext.ulauncher.io/-/github-nurgasemetey-ulauncher-daily-note
+
 ## Demo
 ![Alt text](images/demo.gif)
 
